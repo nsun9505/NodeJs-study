@@ -1,3 +1,5 @@
+# post 데이터 받기
+```
 var qs = require('querystring');
 var body = '';
 
@@ -13,3 +15,4 @@ reques.on('end', function(){
 	var title = post.title;				// input 태그의 name 속성 값
 	var description = post.description;	// input 태그의 name 속성 값
 });
+```
