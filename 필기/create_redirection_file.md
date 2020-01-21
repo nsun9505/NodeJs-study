@@ -17,3 +17,14 @@
         });
       });
 ```
+- 파일이 생성 됨.
+  - 파일이 생성되지 않는다면 권한 확인할 것.
+
+# Redirection
+```
+fs.writeFile(`data/${title}`, description, 'utf8', function(err){
+          // page redirection
+          response.writeHead(302, {Location: `/?id=${title}`});
+          response.end('success');
+        });
+```
